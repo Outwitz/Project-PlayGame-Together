@@ -8,5 +8,7 @@ c.execute('''CREATE TABLE dota_2_tgt (username TEXT, password TEXT, name TEXT,st
 c.execute('''CREATE TABLE apex_legends_tgt (username TEXT , password TEXT, name TEXT,steam_link TEXT,rank TEXT,contact TEXT,title TEXT,PRIMARY KEY(username,steam_link))''')
 
 c.execute('''CREATE TABLE IF NOT EXISTS report_dota_fix(steam_link TEXT,reason TEXT,reason_title TEXT,Image BLOB,PRIMARY KEY(steam_link))''')
+c.execute('''CREATE TABLE IF NOT EXISTS report_vlr(steam_link TEXT,reason TEXT,reason_title TEXT,Image BLOB,PRIMARY KEY(steam_link))''')
+c.execute('''CREATE TABLE IF NOT EXISTS report_apex(steam_link TEXT,reason TEXT,reason_title TEXT,Image BLOB,PRIMARY KEY(steam_link))''')
 
 conn.commit()
